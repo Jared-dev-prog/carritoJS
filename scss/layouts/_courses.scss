@@ -1,0 +1,39 @@
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course {
+
+    .course-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .stars {
+
+        max-width: 7rem;
+    }
+}
+
+.course-information {
+
+    padding: 1rem;
+    background-color: white;
+}
+
+.link {
+    text-decoration: none;
+    background-color: #33C3F0;
+    padding: .6rem; 
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    border-radius: .5rem;
+}

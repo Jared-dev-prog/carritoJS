@@ -1,0 +1,174 @@
+.bg-header {
+    background-color: white;
+    padding: .1rem 0;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+
+    img {
+        height: 2.5rem;
+    }
+
+    .shopping-cart {
+        img {
+            max-height: 2rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.shopping-cart {
+    ul {
+        list-style: none;
+        padding: 0; 
+    }
+}
+
+.submenu {
+    position: relative;
+
+    .cart {
+        text-align: center;
+        display: none;
+        table {
+            width: 100%;
+            padding: 1rem 2rem;
+        }
+    }
+}
+
+.submenu:hover .cart {
+    display: block;
+    text-align: center;
+    position: absolute;
+    left: -28rem;
+    background-color: white;
+    padding-bottom: 2rem;
+    min-width: 40rem;
+    min-height: 20rem;
+    table {
+        background-color: white;
+        padding: 1rem 2rem;
+    }
+}
+
+.link-empty {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: .8rem 2rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    border: 1px solid rgb(165, 165, 165);
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: #828282;
+}
+
+.slides {
+    background-image: url(../img/hero.jpg);
+    min-height: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.slides-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 20rem;
+    
+    h2, p {
+        color: white;
+    }
+
+    h2 {
+        margin-top: 5rem;
+    }
+
+    p {
+        margin-top: -1rem;
+        font-size: 1.6rem;
+    }
+
+
+}
+
+.form {
+
+    .search {
+        padding: 1rem 5rem;
+        border: none;
+        border-radius: .5rem;
+    }
+
+    .submit {
+        position: absolute;
+        background-image: url(../img/lupa.png);
+        background-size: 2rem;
+        background-repeat: no-repeat;
+        min-height: 2rem;
+        min-width: 2rem;
+        background-position: left center; 
+        border: none;
+        margin-top: .6rem;
+        margin-left: -2rem;
+        opacity: .7;
+
+        &:hover {
+            cursor: pointer;
+        } 
+    }
+}
+
+.bg-icons {
+    background: rgb(36,0,14);
+    background: linear-gradient(351deg, rgba(36,0,14,1) 9%, rgba(156,0,59,1) 53%, rgba(255,0,95,1) 100%);
+    min-height: 5rem;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+
+    .icon {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+        
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        p {
+            color: white;
+            line-height: 1.5;
+        }
+    }
+}
+
+.btn-delete {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 auto;
+}
